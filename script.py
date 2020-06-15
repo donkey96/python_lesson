@@ -39,3 +39,13 @@ print(test_str.replace('izm', 'ism'))
 # 文字列の分割
 test_str = 'python-izm'
 print(test_str.split('-'))
+
+# 文字列の桁揃え
+test_str = '1234'
+
+print(test_str.rjust(10, '0'))
+print(test_str.rjust(10, '!'))
+
+test_str = '1234'
+print(test_str.zfill(10))
+print(test_str.zfill(3))
