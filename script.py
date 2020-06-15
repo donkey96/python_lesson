@@ -60,3 +60,9 @@ test_str = 'python-izm'
 
 print('z' in test_str)
 print('s' in test_str)
+
+# 大文字・小文字変換
+test_str = 'Python-Izm.Com'
+
+print(test_str.upper())
+print(test_str.lower())
