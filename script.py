@@ -49,3 +49,14 @@ print(test_str.rjust(10, '!'))
 test_str = '1234'
 print(test_str.zfill(10))
 print(test_str.zfill(3))
+
+# 文字列の検索
+test_str = 'python-izm'
+
+print(test_str.startswith('python'))
+print(test_str.startswith('izm'))
+
+test_str = 'python-izm'
+
+print('z' in test_str)
+print('s' in test_str)
