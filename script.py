@@ -1,10 +1,5 @@
-print('モジュールのロード')
+print('あなたの名前を教えてください。')
 
-def test():
-    print('関数:testを呼び出しました')
+you_name = input('>> ')
 
-if __name__ == '__main__':
-
-    print('python-izm')
-#   print('パイソンイズム')
-    test()
+print(you_name)
