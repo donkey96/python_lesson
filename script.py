@@ -1,5 +1,10 @@
-print('あなたの名前を教えてください。')
+# 文字列の基礎
+print('python-izm')
+print("python-izm")
 
-your_name = input('>> ')
+test_str = """
+test_1
+test_2
+"""
 
-print('こんにちは! {} さん!'.format(your_name))
+print(test_str)
