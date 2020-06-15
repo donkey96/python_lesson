@@ -30,3 +30,8 @@ print(test_str)
 # 文字列へ変換
 test_integer = 100
 print(str(test_integer) + '円')
+
+# 文字列の置換
+test_str = 'python-izm'
+
+print(test_str.replace('izm', 'ism'))
