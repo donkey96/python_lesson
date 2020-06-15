@@ -35,3 +35,7 @@ print(str(test_integer) + '円')
 test_str = 'python-izm'
 
 print(test_str.replace('izm', 'ism'))
+
+# 文字列の分割
+test_str = 'python-izm'
+print(test_str.split('-'))
