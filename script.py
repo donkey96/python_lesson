@@ -1,5 +1,5 @@
 print('あなたの名前を教えてください。')
 
-you_name = input('>> ')
+your_name = input('>> ')
 
-print(you_name)
+print('こんにちは! {} さん!'.format(your_name))
