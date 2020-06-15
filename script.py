@@ -8,6 +8,7 @@ test_2
 """
 
 print(test_str)
+
 # 文字列の連結
 test_str = 'python'
 test_str = test_str + '-'
@@ -25,3 +26,7 @@ print(test_str)
 test_str = '012' * 3
 
 print(test_str)
+
+# 文字列へ変換
+test_integer = 100
+print(str(test_integer) + '円')
