@@ -20,14 +20,12 @@ test_list_1 = ['100', '200', '300', '200', '100']
 print(test_list_1.count('200'))
 
 # ディクショナリ
-test_dict_1 = {}
+test_dict_1 = {'YEAR': '2010', 'MONTH': '1', 'DAY': '20'}
 
 print(test_dict_1)
 
 print('=====================================')
 
-test_dict_1['YEAR'] = '2010'
-test_dict_1['MONTH'] = '1'
-test_dict_1['DAY'] = '20'
+del test_dict_1['DAY']
 
 print(test_dict_1)
