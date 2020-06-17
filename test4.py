@@ -26,5 +26,5 @@ print(test_dict_1)
 
 print('=====================================')
 
-print(test_dict_1.keys())
-print(test_dict_1.values())
+for key, value in test_dict_1.items():
+  print(key, value)
