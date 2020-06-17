@@ -30,11 +30,12 @@ print('YEAR' in test_dict_1)
 print('YEARS' in test_dict_1)
 
 # セット
-test_set_1 = {'python', '-', 'izm', '.', 'com', 'python'}
+test_set_1 = set()
 print(test_set_1)
 
 print('-------------------------------------')
 
-for i in test_set_1:
-  print(i)
- 
+test_set_1.add('python')
+test_set_1.update(test_list_1)
+
+print(test_set_1)
