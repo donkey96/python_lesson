@@ -26,6 +26,5 @@ print(test_dict_1)
 
 print('=====================================')
 
-del test_dict_1['DAY']
-
-print(test_dict_1)
+print(test_dict_1.keys())
+print(test_dict_1.values())
