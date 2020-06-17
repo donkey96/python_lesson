@@ -21,6 +21,8 @@ print(test_list_1)
 
 print('---------------------------------')
 
-test_list_1.remove('2')
+print(test_list_1.pop(1))
+print(test_list_1)
 
+print(test_list_1.pop())
 print(test_list_1)
