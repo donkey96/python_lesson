@@ -16,10 +16,15 @@ print(test_tuple[1])
 print(test_tuple[2])
 
 # リスト
-test_list_1 = ['python', '-', 'izm', '.', 'com']
+test_list_1 = []
 print(test_list_1)
 
 print('---------------------------------')
 
-for i in test_list_1:
-    print(i)
+test_list_1.append('python')
+test_list_1.append('-')
+test_list_1.append('izm')
+test_list_1.append('.')
+test_list_1.append('com')
+
+print(test_list_1)
