@@ -26,5 +26,5 @@ print(test_dict_1)
 
 print('=====================================')
 
-for key, value in test_dict_1.items():
-  print(key, value)
+print('YEAR' in test_dict_1)
+print('YEARS' in test_dict_1)
