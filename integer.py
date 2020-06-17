@@ -10,3 +10,12 @@ print(test_integer / 10) # 除算
 test_str = '100'
 
 print(int(test_str) + 100)
+
+# 浮動小数点数
+
+test_str = '100.5'
+
+print(float(test_str) + 100)
+
+test_float = .5
+print(test_float)
