@@ -28,3 +28,13 @@ print('=====================================')
 
 print('YEAR' in test_dict_1)
 print('YEARS' in test_dict_1)
+
+# セット
+test_set_1 = {'python', '-', 'izm', '.', 'com', 'python'}
+print(test_set_1)
+
+print('-------------------------------------')
+
+for i in test_set_1:
+  print(i)
+ 
