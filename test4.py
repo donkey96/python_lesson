@@ -16,15 +16,16 @@ print(test_tuple[1])
 print(test_tuple[2])
 
 # リスト
-test_list_1 = []
+test_list_1 = ['python', 'izm', 'com']
 print(test_list_1)
 
 print('---------------------------------')
 
-test_list_1.append('python')
-test_list_1.append('-')
-test_list_1.append('izm')
-test_list_1.append('.')
-test_list_1.append('com')
+test_list_1.insert(1, '-')
+test_list_1.insert(3, '.')
+
+print(test_list_1)
+
+test_list_1.insert(0, 'http://wwww.')
 
 print(test_list_1)
