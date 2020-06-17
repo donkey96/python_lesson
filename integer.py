@@ -19,3 +19,10 @@ print(float(test_str) + 100)
 
 test_float = .5
 print(test_float)
+
+# 複素数
+test_complex = 100 + 5j
+
+print(test_complex)
+print(test_complex.real)
+print(test_complex.imag)
