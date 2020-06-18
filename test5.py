@@ -8,3 +8,7 @@ print(test_list[-1:])
 print(test_list[:-1])
 print(test_list[::-1])
 print(test_list[:999])
+
+test_list[1:3] = ('WWW', 'PYTHON')
+
+print(test_list)
