@@ -43,3 +43,8 @@ from testmod import TestClass
 
 test_class_2 = TestClass()
 test_class_2.test_method('2')
+
+from testmod import TestClass as t
+
+test_class_3 = t()
+test_class_3.test_method('3')
