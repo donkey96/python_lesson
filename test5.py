@@ -48,3 +48,7 @@ from testmod import TestClass as t
 
 test_class_3 = t()
 test_class_3.test_method('3')
+
+# エスケープシーケンス
+print('1234\'567890')
+print("1234'567890")
