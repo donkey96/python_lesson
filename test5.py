@@ -51,3 +51,12 @@ test_class_3.test_method('3')
 
 # エスケープシーケンス
 print("1234\t567890")
+
+# パスの結合・連結
+import os
+
+PROJECT_DIR = 'C:¥python-izm'
+SETTINGS_FILE = ':settings.ini'
+
+print(os.path.join(PROJECT_DIR, SETTINGS_FILE))
+print(os.path.join(PROJECT_DIR, 'settings_dir', SETTINGS_FILE))
