@@ -21,6 +21,6 @@ for value_1, value_2 in test_list_1:
 # while文
 counter = 0
 
-while counter < 10:
+while True:
   counter += 1
   print(counter)
