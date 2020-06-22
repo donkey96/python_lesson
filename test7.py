@@ -7,5 +7,5 @@ for_sample.append("for")
 for_sample.append("statement")
 for_sample.append("sample")
 
-for value in for_sample:
+for value in 'ABCDEF':
   print(value)
