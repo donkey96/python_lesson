@@ -26,3 +26,11 @@ while True:
   print(counter)
   if counter == 10:
     break
+
+# continue
+for num in range(100):
+
+  if num % 10:
+    continue
+  
+  print(num)
