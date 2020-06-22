@@ -17,3 +17,12 @@ for value in test_list_1:
 
 for value_1, value_2 in test_list_1:
   print(value_1, value_2)
+
+# while文
+counter = 0
+
+while True:
+  counter += 1
+  print(counter)
+  if counter == 10:
+    break
