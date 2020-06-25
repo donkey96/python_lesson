@@ -24,6 +24,8 @@ print('サイト開設 {1} 日目! {0}'.format(test_str, test_int))
 
 # 例外処理
 print('------------------------------------------------------')
+import sys
+import traceback
 
 def exception_test(value_1, value_2):
   print('====計算開始====')
@@ -41,8 +43,8 @@ def exception_test(value_1, value_2):
   return result
 
 try:
-  print(exception_test(100, 100))
-  print(exception_test(200, 200))
-  print(exception_test(300, '300'))
+  print(exception_test(100, '200'))
 except:
-  print('エラーを受け取りました')
+  print('---------------------------------------')
+  print(traceback.format_exc(sys.exc_info()[2]))
+  print('---------------------------------------')
