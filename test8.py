@@ -9,6 +9,7 @@ f_obj = open('test.txt', 'w')
 print('python-izm.com', file=f_obj)
 
 # フォーマット出力
+print('-------------------------------------------------------')
 print('Pythonの学習サイト : %s' % 'python-izm.com')
 print('Pythonの学習サイト : %s-%s.%s' % ('python', 'izm', 'com'))
 
@@ -21,3 +22,29 @@ print('Pythonの学習サイト : {0}-{1}.{2}'.format('python', 'izm', 'com'))
 
 print('サイト開設 {1} 日目! {0}'.format(test_str, test_int))
 
+# 例外処理
+print('------------------------------------------------------')
+import sys
+import traceback
+
+def exception_test(value_1, value_2):
+  print('====計算開始====')
+
+  result = 0
+
+  try:
+    result = value_1 + value_2
+  except:
+    print('計算出来ませんでした!')
+    raise
+  finally:
+    print('計算終了')
+
+  return result
+
+try:
+  print(exception_test(100, '200'))
+except:
+  print('---------------------------------------')
+  print(traceback.format_exc(sys.exc_info()[2]))
+  print('---------------------------------------')
