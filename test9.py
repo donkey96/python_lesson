@@ -1,14 +1,19 @@
-class TestClass:
+class Country:
+  
+  def __init__(self, country_name):
+    self.country_name = country_name
 
-  def __init__(self, code, name):
-    self.code = code
-    self.name = name
+class City(Country):
+
+  def __init__(self, country_name, city_name):
+    super().__init__(country_name)
+    self.city_name = city_name
 
 classes = []
-classes.append(TestClass(1, 'テスト1'))
-classes.append(TestClass(2, 'テスト2'))
+classes.append(City('Japan', 'Tokyo'))
+classes.append(City('USA', 'Washington, D.C.'))
 
 for test_cls in classes:
   print('==== Class ====')
-  print('code --> ' + str(test_cls.code))
-  print('name --> ' + test_cls.name)
+  print('contry_name --> ' + test_cls.country_name)
+  print('city_name --> ' + test_cls.city_name)
