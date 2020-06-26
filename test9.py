@@ -1,19 +1,13 @@
-class Country:
-  
-  def __init__(self, country_name):
-    self.country_name = country_name
+class NewStyleClassBase(object):
 
-class City(Country):
+  def test_method(self, msg):
+    print('NewStyleClassBase: {}'.format(msg))
 
-  def __init__(self, country_name, city_name):
-    super().__init__(country_name)
-    self.city_name = city_name
+class NewStyleClass(NewStyleClassBase):
 
-classes = []
-classes.append(City('Japan', 'Tokyo'))
-classes.append(City('USA', 'Washington, D.C.'))
+  def test_method(self, msg):
+    print('NewStyleClass: {}'.format(msg))
+    super().test_method(msg)
 
-for test_cls in classes:
-  print('==== Class ====')
-  print('contry_name --> ' + test_cls.country_name)
-  print('city_name --> ' + test_cls.city_name)
+new = NewStyleClass()
+new.test_method('method call')
