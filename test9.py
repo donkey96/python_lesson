@@ -28,3 +28,11 @@ print(TestClass.sample_staticmethod(10, 100))
 # インスタンス化してからも呼び出せる
 test_class = TestClass()
 print(test_class.sample_staticmethod(100, 1000))
+
+# モジュールのインポート
+import sys
+
+sys.path.append('~/Desktop/learning/python_lesson')
+
+import calc
+print(calc.plus_value(1, 1))
