@@ -36,3 +36,12 @@ sys.path.append('~/Desktop/learning/python_lesson')
 
 import calc
 print(calc.plus_value(1, 1))
+
+# lambda式
+def plus_value_2(num_1, num_2):
+  return num_1 + num_2
+
+print(plus_value_2(10, 100))
+
+l_func = lambda num_1, num_2: num_1 + num_2
+print(l_func(10, 100))
