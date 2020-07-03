@@ -80,7 +80,7 @@ f.write('Pythonでファイルに書き込みました!')
 
 f.close()
 
-fin_sjis = open('read.txt', 'r', encoding='shift_jis')
+fin_sjis = open('read.txt', 'r', encoding='utf-8')
 fout_euc = open('euc-jp.txt', 'w', encoding='euc_jp')
 fout_utf = open('utf-8.txt', 'w', encoding='utf-8')
 
