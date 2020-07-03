@@ -47,8 +47,15 @@ l_func = lambda num_1, num_2: num_1 + num_2
 print(l_func(10, 100))
 
 # ジェネレータ
-for i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+def func_sample():
+  yield('おはよう')
+  yield('こんにちは')
+  yield('こんばんは')
+
+for i in func_sample():
   print(i)
 
-for i in <ジェネレータ>:
-  print(i)
+f = func_sample()
+print(next(f))
+print(next(f))
+print(next(f))
