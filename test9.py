@@ -45,3 +45,10 @@ print(plus_value_2(10, 100))
 
 l_func = lambda num_1, num_2: num_1 + num_2
 print(l_func(10, 100))
+
+# ジェネレータ
+for i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+  print(i)
+
+for i in <ジェネレータ>:
+  print(i)
