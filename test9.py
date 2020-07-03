@@ -66,10 +66,16 @@ print(gen_sample)
 for i in gen_sample:
   print(i)
 
-# ファイルの読み込み
+# ファイルの読み書き
 f = open('read.txt', 'r')
 
 for row in f:
   print(row)
+
+f.close()
+
+f = open('write.txt', 'w')
+
+f.write('Pythonでファイルに書き込みました!')
 
 f.close()
