@@ -1,14 +1,13 @@
 class PropertyTest(object):
 
-  def __init__(self, scheme, host):
-    self.schema = scheme
-    self.host = host
+  def __init__(self, url):
+    self._url = url
 
-  def get_url(self):
-    return('{}://{}/'.format(self.schema, self.host))
+  @property
+  def url(self):
+    print('-- get_url --')
+    return self._url
 
-  url = property(get_url)
-
-prop = PropertyTest('https', 'www.python-izm.com/')
+prop = PropertyTest('https://www.python-izm.com/')
 
 print(prop.url)
