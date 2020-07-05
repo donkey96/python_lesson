@@ -8,6 +8,17 @@ class PropertyTest(object):
     print('-- get_url --')
     return self._url
 
+  @url.setter
+  def url(self, url):
+    print('-- set_url --')
+    self._url = url
+
+  @url.deleter
+  def url(self):
+    del self._url
+
 prop = PropertyTest('https://www.python-izm.com/')
+
+prop.url = 'python-izm'
 
 print(prop.url)
