@@ -1,32 +1,24 @@
-with open('read.txt') as f:
+class PropertyTest(object):
 
-  #
-  # 何らかの処理
-  #
+  def __init__(self, url):
+    self._url = url
 
-  print(f.closed)
+  @property
+  def url(self):
+    print('-- get_url --')
+    return self._url
 
-print(f.closed)
+  @url.setter
+  def url(self, url):
+    print('-- set_url --')
+    self._url = url
 
-class ContextManagerTest:
-  
-  def __enter__(self):
-    print('__enter__')
-    return 'as obj'
+  @url.deleter
+  def url(self):
+    del self._url
 
-  def __exit__(self, exc_type, exc_value, traceback):
-    print('__exit__')
+prop = PropertyTest('https://www.python-izm.com/')
 
-with ContextManagerTest() as as_obj:
-  print(as_obj)
+prop.url = 'python-izm'
 
-from contextlib import contextmanager
-
-@contextmanager
-def context_manager_test():
-  print('enter')
-  yield 'as obj'
-  print('exit')
-
-with context_manager_test() as as_obj:
-  print(as_obj)
+print(prop.url)
