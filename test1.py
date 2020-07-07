@@ -12,7 +12,7 @@ for value in python_list:
 
 print('-------------------------')
 print('[ソート表示]')
-for value in sorted(python_list):
+for value in python_list[::-1]:
   print(value)
 
 print('-------------------------')
