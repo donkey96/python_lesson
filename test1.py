@@ -10,12 +10,9 @@ print('[そのまま表示]')
 for value in python_list:
   print(value)
 
-print('-------------------------')
-print('[ソート表示]')
-for value in sorted(python_list):
-  print(value)
+python_list.reverse()
 
 print('-------------------------')
-print('[リストの再表示]')
+print('[ソート表示]')
 for value in python_list:
   print(value)
