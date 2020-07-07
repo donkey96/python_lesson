@@ -1,24 +1,21 @@
-class PropertyTest(object):
+python_list = []
+python_list.append(100)
+python_list.append(200)
+python_list.append(10)
+python_list.append(800)
+python_list.append(60)
 
-  def __init__(self, url):
-    self._url = url
+print('-------------------------')
+print('[そのまま表示]')
+for value in python_list:
+  print(value)
 
-  @property
-  def url(self):
-    print('-- get_url --')
-    return self._url
+print('-------------------------')
+print('[ソート表示]')
+for value in sorted(python_list):
+  print(value)
 
-  @url.setter
-  def url(self, url):
-    print('-- set_url --')
-    self._url = url
-
-  @url.deleter
-  def url(self):
-    del self._url
-
-prop = PropertyTest('https://www.python-izm.com/')
-
-prop.url = 'python-izm'
-
-print(prop.url)
+print('-------------------------')
+print('[リストの再表示]')
+for value in python_list:
+  print(value)
