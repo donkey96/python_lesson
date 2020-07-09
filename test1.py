@@ -1,21 +1,4 @@
-python_list = []
-python_list.append(100)
-python_list.append(200)
-python_list.append(10)
-python_list.append(800)
-python_list.append(60)
+test_list = ['python', '-', 'izm', '.', 'com']
 
-print('-------------------------')
-print('[そのまま表示]')
-for value in python_list:
-  print(value)
-
-print('-------------------------')
-print('[ソート表示]')
-for value in python_list[::-1]:
-  print(value)
-
-print('-------------------------')
-print('[リストの再表示]')
-for value in python_list:
-  print(value)
+for idx, val in enumerate(test_list, 1):
+  print(idx, val)
