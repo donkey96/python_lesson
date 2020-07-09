@@ -1,4 +1,17 @@
-test_list = ['python', '-', 'izm', '.', 'com']
+elem = ['www', 'python-izm', 'com']
 
-for idx, val in enumerate(test_list, 1):
-  print(idx, val)
+# host_name = ''
+# for val in elem:
+#   if val != 'com':
+#     host_name += val + '.'
+#   else:
+#     host_name += val
+# print(host_name)
+
+print('.'.join(elem))
+print('\n'.join(elem))
+print(','.join(elem))
+print(' '.join('1234567890'))
+
+print('+'.join(('1', '2', '3')))
+# print('+'.join((1, 2, 3)))
