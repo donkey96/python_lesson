@@ -1,17 +1,7 @@
-elem = ['www', 'python-izm', 'com']
+from itertools import zip_longest
 
-# host_name = ''
-# for val in elem:
-#   if val != 'com':
-#     host_name += val + '.'
-#   else:
-#     host_name += val
-# print(host_name)
+item_list = ['desktop', 'laptop', 'tablet', 'smartphone']
+stock_list = [12, 83, 55]
 
-print('.'.join(elem))
-print('\n'.join(elem))
-print(','.join(elem))
-print(' '.join('1234567890'))
-
-print('+'.join(('1', '2', '3')))
-# print('+'.join((1, 2, 3)))
+for item_name, stock_count in zip_longest(item_list, stock_list, fillvalue='no stock'):
+  print('{} / {}'.format(item_name, stock_count))
