@@ -1,7 +1,7 @@
-from itertools import zip_longest
+test_list_1 = [0, 100, 300, 800, 150, 0, 40]
+test_list_2 = ([], [], [])
+test_list_3 = (['python', 'izm', 'com'], ['www'], ['http'])
 
-item_list = ['desktop', 'laptop', 'tablet', 'smartphone']
-stock_list = [12, 83, 55]
-
-for item_name, stock_count in zip_longest(item_list, stock_list, fillvalue='no stock'):
-  print('{} / {}'.format(item_name, stock_count))
+print(all(test_list_1))
+print(all(test_list_2))
+print(all(test_list_3))
