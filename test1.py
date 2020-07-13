@@ -1,4 +1,4 @@
-comp_list = [i * ii  for i in range(1, 10) for ii in range(1, 10)]
+comp_list = [i for i in range(10) if i % 2 == 1]
 
 print(comp_list)
 
