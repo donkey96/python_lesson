@@ -20,3 +20,10 @@ print(test_set_1.issuperset({'www', 'python', '-', 'izm', '.', 'com'}))
 # issupersetと同じ
 print(test_set_1 >= {'python', 'izm'})
 print(test_set_1 >= {'www', 'python', '-', 'izm', '.', 'com'})
+
+test_set_2 = {'python', 'izm', 'com'}
+
+print(test_set_2.union({'python', 'www'}))
+print(test_set_2.intersection({'python', 'www'}))
+print(test_set_2.difference({'python', 'www'}))
+print(test_set_2.symmetric_difference({'python', 'www'}))
