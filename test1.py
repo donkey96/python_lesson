@@ -24,6 +24,10 @@ print(test_set_1 >= {'www', 'python', '-', 'izm', '.', 'com'})
 test_set_2 = {'python', 'izm', 'com'}
 
 print(test_set_2.union({'python', 'www'}))
+print(test_set_2 | {'python', 'www'})
 print(test_set_2.intersection({'python', 'www'}))
+print(test_set_2 & {'python', 'www'})
 print(test_set_2.difference({'python', 'www'}))
+print(test_set_2 - {'python', 'www'})
 print(test_set_2.symmetric_difference({'python', 'www'}))
+print(test_set_2 ^ {'python', 'www'})
