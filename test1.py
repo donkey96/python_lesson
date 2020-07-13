@@ -31,3 +31,15 @@ print(test_set_2.difference({'python', 'www'}))
 print(test_set_2 - {'python', 'www'})
 print(test_set_2.symmetric_difference({'python', 'www'}))
 print(test_set_2 ^ {'python', 'www'})
+
+test_set_3 = {'python', 'izm', 'com'}
+test_set_3.intersection_update({'python', 'www'})
+print(test_set_3)
+
+test_set_3 = {'python', 'izm', 'com'}
+test_set_3.difference_update({'python', 'www'})
+print(test_set_3)
+
+test_set_3 = {'python', 'izm', 'com'}
+test_set_3.symmetric_difference_update({'python', 'www'})
+print(test_set_3)
