@@ -37,9 +37,21 @@ test_set_3.intersection_update({'python', 'www'})
 print(test_set_3)
 
 test_set_3 = {'python', 'izm', 'com'}
+test_set_3 &= {'python', 'www'}
+print(test_set_3)
+
+test_set_3 = {'python', 'izm', 'com'}
 test_set_3.difference_update({'python', 'www'})
 print(test_set_3)
 
 test_set_3 = {'python', 'izm', 'com'}
+test_set_3 -= {'python', 'www'}
+print(test_set_3)
+
+test_set_3 = {'python', 'izm', 'com'}
 test_set_3.symmetric_difference_update({'python', 'www'})
+print(test_set_3)
+
+test_set_3 = {'python', 'izm', 'com'}
+test_set_3 ^= {'python', 'www'}
 print(test_set_3)
