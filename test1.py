@@ -1,41 +1,11 @@
-class TestClass:
+class AttrTest():
 
-  def __init__(self, title):
-    self.title = title
+  def __init__(self):
+    self.code = -1
 
-tuple_instance = ('tuple', 'instance')
-list_instance = ['list', 'instance']
-dict_instance = {'1':'dict', '2':'instance'}
-class_instance = TestClass('class')
+attr_test = AttrTest()
+attr_test.name = 'python-izm'
 
-python_list = []
-python_list.append('python')
-python_list.append('izm')
-python_list.append(tuple_instance)
-python_list.append(list_instance)
-python_list.append(dict_instance)
-python_list.append(class_instance)
-
-for parent in python_list:
-  if isinstance(parent, tuple):
-    print('+++ tuple +++')
-    for child in parent:
-      print(child)
-
-  elif isinstance(parent, list):
-    print('+++ list +++')
-    for child in parent:
-      print(child)
-
-  elif isinstance(parent, dict):
-    print('+++ dict +++')
-    for child in parent.keys():
-      print(parent[child])
-
-  elif isinstance(parent, TestClass):
-    print('+++ TestClass +++')
-    print(parent.title)
-   
-  else:
-    print('-- string --')
-    print(parent)
+print(hasattr(attr_test, 'code'))
+print(hasattr(attr_test, 'name'))
+print(hasattr(attr_test, 'kana'))
