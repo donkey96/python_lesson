@@ -1,11 +1,14 @@
-class AttrTest():
+import sys
 
-  def __init__(self):
-    self.code = -1
+def func_test():
+  print('function')
 
-attr_test = AttrTest()
-attr_test.name = 'python-izm'
+class ClassTest():
+  pass
 
-print(getattr(attr_test, 'code'))
-print(getattr(attr_test, 'name'))
-print(getattr(attr_test, 'kana', 'No Attr'))
+str_test = 'str'
+
+print(callable(sys))
+print(callable(func_test))
+print(callable(ClassTest))
+print(callable(str_test))
