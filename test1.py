@@ -1,5 +1,5 @@
-import os
+import os.path
 
-print(os.sep)
-print(os.pathsep)
-print(os.extsep)
+print(os.path.splitext('splitext.py'))
+print(os.path.splitext('c:/python/splitext.txt'))
+print(os.path.splitext('splitext'))
