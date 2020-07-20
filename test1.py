@@ -1,4 +1,12 @@
-num = [10, 20, 30, 20, 5, 3]
+print('----------------------------')
+print(dir())
 
-print(sum(num))
-print(sum(num, 10000))
+python_dir = 'python-izm'
+
+print('----------------------------')
+print(dir())
+
+print('----------------------------')
+import sys
+for one in dir(sys):
+  print(one)
