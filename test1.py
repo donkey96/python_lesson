@@ -1,12 +1,5 @@
-print('----------------------------')
-print(dir())
+import os
 
-python_dir = 'python-izm'
-
-print('----------------------------')
-print(dir())
-
-print('----------------------------')
-import sys
-for one in dir(sys):
-  print(one)
+print(os.sep)
+print(os.pathsep)
+print(os.extsep)
