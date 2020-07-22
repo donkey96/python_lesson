@@ -1,5 +1,5 @@
-import os.path
+import os
 
-print(os.path.splitext('splitext.py'))
-print(os.path.splitext('c:/python/splitext.txt'))
-print(os.path.splitext('splitext'))
+test_str = 'python-izm.com'
+
+print(test_str.replace('.', os.linesep))
