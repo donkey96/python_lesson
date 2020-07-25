@@ -1,5 +1,7 @@
 import os
 
-test_str = 'python-izm.com'
+for env in os.environ:
+  print(env)
 
-print(test_str.replace('.', os.linesep))
+print('---------------------------------')
+print(os.environ.get('windir'))
