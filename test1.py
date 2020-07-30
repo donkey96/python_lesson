@@ -1,10 +1,13 @@
-import random
+import zipfile
 
-print(random.random())
-print(random.uniform(1, 100))
-print(random.randint(1, 100))
-print(random.choice('1234567890abcdefghij'))
+zipFile = zipfile.ZipFile('./compress_1.zip', 'w', zipfile.ZIP_STORED)
+zipFile.write('./python.py')
+zipFile.write('./python.txt')
+zipFile.write('./python.csv')
+zipFile.close()
 
-sample_list = ['python', 'izm', 'com', 'random', 'sample']
-random.shuffle(sample_list)
-print(sample_list)
+zipFile = zipfile.ZipFile('./compress_2.zip', 'w', zipfile.ZIP_DEFLATED)
+zipFile.write('./python.py')
+zipFile.write('./python.txt')
+zipFile.write('./python.csv')
+zipFile.close()
