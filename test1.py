@@ -1,13 +1,15 @@
-import zipfile
+import csv
 
-zipFile = zipfile.ZipFile('./compress_1.zip', 'w', zipfile.ZIP_STORED)
-zipFile.write('./python.py')
-zipFile.write('./python.txt')
-zipFile.write('./python.csv')
-zipFile.close()
+csv_file = open('./python.csv', 'w', newline='')
+writer = csv.writer(csv_file)
 
-zipFile = zipfile.ZipFile('./compress_2.zip', 'w', zipfile.ZIP_DEFLATED)
-zipFile.write('./python.py')
-zipFile.write('./python.txt')
-zipFile.write('./python.csv')
-zipFile.close()
+row = ('python', '-', 'izm', '1')
+writer.writerow(row)
+
+rows = []
+rows.append(('python', '-', 'izm', '2'))
+rows.append(('python', '-', 'izm', '3'))
+rows.append(('p,y,t,h,o,n', '-', 'i,z,m', '4'))
+writer.writerows(rows)
+
+csv_file.close()
