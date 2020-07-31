@@ -1,10 +1,15 @@
-import random
+import csv
 
-print(random.random())
-print(random.uniform(1, 100))
-print(random.randint(1, 100))
-print(random.choice('1234567890abcdefghij'))
+csv_file = open('./python.csv', 'w', newline='')
+writer = csv.writer(csv_file)
 
-sample_list = ['python', 'izm', 'com', 'random', 'sample']
-random.shuffle(sample_list)
-print(sample_list)
+row = ('python', '-', 'izm', '1')
+writer.writerow(row)
+
+rows = []
+rows.append(('python', '-', 'izm', '2'))
+rows.append(('python', '-', 'izm', '3'))
+rows.append(('p,y,t,h,o,n', '-', 'i,z,m', '4'))
+writer.writerows(rows)
+
+csv_file.close()
