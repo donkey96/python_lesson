@@ -1,7 +1,12 @@
 import csv
 
 csv_file = open('./python.csv', 'w', newline='')
-writer = csv.writer(csv_file)
+writer = csv.writer(
+  csv_file,
+  quoting=csv.QUOTE_ALL,
+  delimiter=':',
+  quotechar='`'
+  )
 
 row = ('python', '-', 'izm', '1')
 writer.writerow(row)
