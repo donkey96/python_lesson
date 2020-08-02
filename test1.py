@@ -3,9 +3,7 @@ import csv
 csv_file = open('./python.csv', 'w', newline='')
 writer = csv.writer(
   csv_file,
-  quoting=csv.QUOTE_ALL,
-  delimiter=':',
-  quotechar='`'
+  dialect=csv.excel_tab,
   )
 
 row = ('python', '-', 'izm', '1')
