@@ -3,10 +3,12 @@ import csv
 class CustomFormat(csv.excel):
   quoting = csv.QUOTE_ALL
 
+csv.register_dialect('myformat', CustomFormat)
+
 csv_file = open('./python.csv', 'w', newline='')
 writer = csv.writer(
   csv_file,
-  dialect=CustomFormat(),
+  dialect='myformat',
   )
 
 row = ('python', '-', 'izm', '1')
