@@ -1,9 +1,12 @@
 import csv
 
+class CustomFormat(csv.excel):
+  quoting = csv.QUOTE_ALL
+
 csv_file = open('./python.csv', 'w', newline='')
 writer = csv.writer(
   csv_file,
-  dialect=csv.excel_tab,
+  dialect=CustomFormat(),
   )
 
 row = ('python', '-', 'izm', '1')
