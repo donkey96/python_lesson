@@ -1,11 +1,4 @@
-import csv
+import hashlib
 
-csv_file = open('./python.csv', 'r', newline='')
-reader = csv.reader(csv_file)
-
-for row in reader:
-  print('-----------------------')
-  for cell in row:
-    print(cell)
-    
-csv_file.close()
+print(hashlib.md5(b'python-izm').hexdigest())
+print(hashlib.sha1(b'python-izm').hexdigest())
