@@ -1,4 +1,3 @@
-import hashlib
+import uuid
 
-print(hashlib.md5(b'python-izm').hexdigest())
-print(hashlib.sha1(b'python-izm').hexdigest())
+print(uuid.uuid4())
