@@ -1,20 +1,21 @@
-import urllib.request
-from html.parser import HTMLParser
+import xml.dom.minidom
 
-class TestParser(HTMLParser):
+dom = xml.dom.minidom.parse('sample.xml')
 
-  def handle_starttag(self, tagname, attribute):
-    if tagname.lower() == 'a':
-      for i in attribute:
-        if i[0].lower() == 'href':
-          print(i[1])
+print(dom.documentElement.tagName)
+for node in dom.documentElement.childNodes:
+  if node.nodeType == node.ELEMENT_NODE:
+    print(' ' + node.tagName)
 
-url = 'http://www.python-izm.com/'
+    for node2 in node.childNodes:
+      if node2.nodeType == node2.ELEMENT_NODE:
+        print('  ' + node2.tagName)
 
-htmldata = urllib.request.urlopen(url)
+        for node3 in node2.childNodes:
+          if node3.nodeType == node3.TEXT_NODE:
+            print('   ' + node3.data)
 
-parser = TestParser()
-parser.feed(htmldata.read().decode('UTF-8'))
+print('------------------------------')
 
-parser.close()
-htmldata.close()
+for url in dom.getElementsByTagName('url'):
+  print(url.firstChild.data)
