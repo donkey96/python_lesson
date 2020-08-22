@@ -1,21 +1,11 @@
-import xml.dom.minidom
+import json
 
-dom = xml.dom.minidom.parse('sample.xml')
+json_data = {'Python':'python-izm.com',
+             'PythonEngine':('google.co.jp', 'yahoo.co.jp')}
 
-print(dom.documentElement.tagName)
-for node in dom.documentElement.childNodes:
-  if node.nodeType == node.ELEMENT_NODE:
-    print(' ' + node.tagName)
+encode_json_data = json.dumps(json_data)
+print(type(encode_json_data))
 
-    for node2 in node.childNodes:
-      if node2.nodeType == node2.ELEMENT_NODE:
-        print('  ' + node2.tagName)
-
-        for node3 in node2.childNodes:
-          if node3.nodeType == node3.TEXT_NODE:
-            print('   ' + node3.data)
-
-print('------------------------------')
-
-for url in dom.getElementsByTagName('url'):
-  print(url.firstChild.data)
+decode_json_data = json.loads(encode_json_data)
+print(decode_json_data)
+print(type(decode_json_data))
