@@ -12,6 +12,8 @@ class TestThread(threading.Thread):
     print('  === end sub thread ===')
 
 th = TestThread()
+th.daemon = True
+# th.daemon = False
 th.start()
 
 time.sleep(1)
