@@ -1,12 +1,9 @@
-from datetime import datetime
-from xmlrpc.client import ServerProxy
+import sys
 
-proxy = ServerProxy('http://localhost:8000/')
+for i in range(100):
 
-# 登録されているメソッド名を取得
-print(proxy.system.listMethods())
-# それぞれを取得
-print(proxy.is_alive())
-print(proxy.hello('World'))
-nowtime = datetime.strptime(proxy.nowtime().value, '%Y%m%dT%H:%M:%S')
-print(nowtime.strftime('%Y/%m/%d %H:%M:%S'))
+  print(i)
+
+  if i == 10:
+    print('10に達したので終了します')
+    sys.exit()
