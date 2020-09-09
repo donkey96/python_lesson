@@ -1,5 +1,12 @@
-test_num = 100
-print(test_num)
+test_list_1 = [100, 200, 300]
+test_list_2 = [100, 200, 300]
+test_list_3 = [300, 200, 100]
 
-test_num -= 1
-print(test_num)
+test_tuple_1 = (100, 200, 300)
+test_str_1 = 'python-izm'
+
+print(test_list_1 == test_list_2)
+print(test_list_1 == test_list_3)
+print('----------------------------')
+print(test_list_1 == test_tuple_1)
+print(test_str_1 == 'python-izm')
