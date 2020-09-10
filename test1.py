@@ -26,3 +26,15 @@ val = None
 print(id(val))
 
 print(id(None) == id(val))
+
+print('----------------------------')
+
+class TestClass:
+  def __eq__(self, other):
+    return True
+
+c_1 = TestClass()
+c_2 = TestClass()
+
+print(c_1 == None)
+print(c_1 is None)
