@@ -15,3 +15,14 @@ print(test_list_1 is test_list_2)
 print(id(test_list_1))
 print(id(test_list_1) == id(test_list_1))
 print(test_list_1 is test_list_1)
+print('----------------------------')
+print(type(None))
+print(id(None))
+
+val = 'python-izm'
+print(id(val))
+
+val = None
+print(id(val))
+
+print(id(None) == id(val))
