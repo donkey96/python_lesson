@@ -1,2 +1,3 @@
-val = 8
+val = 2 * (3 + 4) * 1
+
 print(val)
