@@ -1,2 +1,2 @@
-val = "Hello World"
+val = 8
 print(val)
