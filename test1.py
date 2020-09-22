@@ -1,16 +1,17 @@
-a = 4 + 3
-hello = "Hello" + "World"
+color = ["white", "black", "red", "blue", "yellow"]
+color2 = ["green", "brown", "purple", "pink"]
+color[4] = "gray"
+del color[0]
 
-a = 7 % 3
-b = i % 3
+pic = color[0] + " and " + color[3]
+total_color = color + color2
+slice = color[1:3]
+slice2 = color[:2]
+slice3 = color[1:]
 
-if x == y:
-if x != y:
-
-if x >= y:
-if x < y:
-  print("Hello World")
-
-if x == 7 and y == 3:
-if x == 5 or y == 10:
-if func() != 0:
+print(color[1])
+print(pic)
+print(total_color)
+print(slice)
+print(slice2)
+print(slice3)
