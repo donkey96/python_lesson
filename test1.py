@@ -6,6 +6,8 @@ kumamon['性格'] = '優しくて明るい'
 
 kumamon['お仕事'] = '公務員'
 
+del kumamon['性別']
+
 print(kumamon['性格'])
 print(name)
 print(kumamon)
