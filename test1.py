@@ -2,5 +2,7 @@ kumamon = {'名前':'くまモン', '性別':'男の子', '出身地':'熊本県
 
 name = kumamon['名前']
 
-print(kumamon['性別'])
+kumamon['性格'] = '優しくて明るい'
+
+print(kumamon['性格'])
 print(name)
