@@ -4,5 +4,8 @@ name = kumamon['名前']
 
 kumamon['性格'] = '優しくて明るい'
 
+kumamon['お仕事'] = '公務員'
+
 print(kumamon['性格'])
 print(name)
+print(kumamon)
