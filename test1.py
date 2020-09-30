@@ -9,3 +9,8 @@ elif "あいう" == "あいう":
   print("この漢字比較はTrueです")
 else:
   print("これはFalseです")
+
+if "def" in "ABCDEFGHIJKLMN":
+  print("文字列は含まれてません")
+elif "おかき" in "あいうえおかきくけこ":
+  print("文字列は含まれています")
