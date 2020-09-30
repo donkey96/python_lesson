@@ -1,13 +1,4 @@
-kumamon = {'名前':'くまモン', '性別':'男の子', '出身地':'熊本県', '誕生日':'3月12日', '性格':'ヤンチャで好奇心いっぱい'}
+val = 5
 
-name = kumamon['名前']
-
-kumamon['性格'] = '優しくて明るい'
-
-kumamon['お仕事'] = '公務員'
-
-del kumamon['性別']
-
-print(kumamon['性格'])
-print(name)
-print(kumamon)
+if val > len([1,2,3,4]):
+  print("Hello!")
