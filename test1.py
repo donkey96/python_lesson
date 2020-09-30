@@ -5,5 +5,7 @@ if val > len([1,2,3,4]):
 
 if "ABC" == "abc":
   print("これはTrueです")
+elif "あいう" == "あいう":
+  print("この漢字比較はTrueです")
 else:
   print("これはFalseです")
