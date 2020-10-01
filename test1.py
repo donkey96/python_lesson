@@ -1,13 +1,16 @@
-kumamon = {'名前':'くまモン', '性別':'男の子', '出身地':'熊本県', '誕生日':'3月12日', '性格':'ヤンチャで好奇心いっぱい'}
+val = 5
 
-name = kumamon['名前']
+if val > len([1,2,3,4]):
+  print("Hello!")
 
-kumamon['性格'] = '優しくて明るい'
+if "ABC" == "abc":
+  print("これはTrueです")
+elif "あいう" == "あいう":
+  print("この漢字比較はTrueです")
+else:
+  print("これはFalseです")
 
-kumamon['お仕事'] = '公務員'
-
-del kumamon['性別']
-
-print(kumamon['性格'])
-print(name)
-print(kumamon)
+if "def" in "ABCDEFGHIJKLMN":
+  print("文字列は含まれてません")
+elif "おかき" in "あいうえおかきくけこ":
+  print("文字列は含まれています")
