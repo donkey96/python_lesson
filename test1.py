@@ -1,12 +1,9 @@
-color = ["white", "black", "red", "blue"]
-
-for val in color:
-  print(val)
-
-for num in range(2, 5):
-  print(num)
-
-cnt = 1
-while cnt <= 5:
-  print(cnt)
-  cnt += 1
+for count in range(1,101):
+  if count % 3 == 0 and count % 5 == 0:
+    print("FizzBuzz")
+  elif count % 3 == 0:
+    print("Fizz")
+  elif count % 5 == 0:
+    print("Buzz")
+  else:
+    print(count)
