@@ -19,3 +19,7 @@ print(chars)
 chars = eigo[:4]
 
 print(chars)
+
+chars[3] = 'z'
+
+print(chars)
