@@ -23,3 +23,7 @@ print(chars)
 chars[3] = 'z'
 
 print(chars)
+
+chars = eigo+ ['g', 'h', 'i']
+
+print(chars)
