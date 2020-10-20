@@ -27,3 +27,7 @@ print(chars)
 chars = eigo+ ['g', 'h', 'i']
 
 print(chars)
+
+del chars[3]
+
+print(chars)
