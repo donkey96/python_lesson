@@ -31,3 +31,7 @@ print(chars)
 del chars[3]
 
 print(chars)
+
+chars[3] = 'd'
+
+print(chars)
