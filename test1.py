@@ -35,3 +35,7 @@ print(chars)
 chars[3] = 'd'
 
 print(chars)
+
+chars[0:2] = ['Hello', 'World']
+
+print(chars)
