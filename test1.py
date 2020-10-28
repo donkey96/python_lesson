@@ -39,3 +39,7 @@ print(chars)
 chars[0:2] = ['Hello', 'World']
 
 print(chars)
+
+chars.insert(4, 'e')
+
+print(chars)
