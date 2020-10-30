@@ -43,3 +43,7 @@ print(chars)
 chars.insert(4, 'e')
 
 print(chars)
+
+eigo.append('g')
+
+print(eigo)
