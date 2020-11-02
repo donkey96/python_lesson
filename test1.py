@@ -47,3 +47,9 @@ print(chars)
 eigo.append('g')
 
 print(eigo)
+
+ext = ['h', 'i', 'j', 'k', 'l', 'm']
+
+eigo.extend(ext)
+
+print(eigo)
