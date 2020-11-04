@@ -53,3 +53,7 @@ ext = ['h', 'i', 'j', 'k', 'l', 'm']
 eigo.extend(ext)
 
 print(eigo)
+
+eigo.remove('h')
+
+print(eigo)
