@@ -57,3 +57,8 @@ print(eigo)
 eigo.remove('h')
 
 print(eigo)
+
+char = eigo.pop()
+
+print(eigo)
+print(char)
