@@ -67,3 +67,7 @@ char = eigo.pop(3)
 
 print(eigo)
 print(char)
+
+eigo.clear()
+
+print(eigo)
