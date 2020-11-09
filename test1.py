@@ -71,3 +71,7 @@ print(char)
 eigo.clear()
 
 print(eigo)
+
+eigo = ['a', 'b', 'c', 'a', 'b', 'c']
+
+print(eigo.index('c'))
