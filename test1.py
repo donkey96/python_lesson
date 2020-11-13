@@ -77,3 +77,5 @@ eigo = ['a', 'b', 'c', 'a', 'b', 'c']
 print(eigo.index('c'))
 
 print(eigo.index('c', 3, 6))
+
+print(eigo.count('b'))
