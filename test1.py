@@ -79,3 +79,7 @@ print(eigo.index('c'))
 print(eigo.index('c', 3, 6))
 
 print(eigo.count('b'))
+
+eigo.sort()
+
+print(eigo)
