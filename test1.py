@@ -83,3 +83,7 @@ print(eigo.count('b'))
 eigo.sort()
 
 print(eigo)
+
+eigo.sort(reverse=True)
+
+print(eigo)
