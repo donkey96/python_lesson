@@ -87,3 +87,7 @@ print(eigo)
 eigo.sort(reverse=True)
 
 print(eigo)
+
+eigo.reverse()
+
+print(eigo)
