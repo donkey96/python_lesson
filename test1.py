@@ -91,3 +91,7 @@ print(eigo)
 eigo.reverse()
 
 print(eigo)
+
+words = eigo.copy()
+
+print(words)
