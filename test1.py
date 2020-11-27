@@ -95,3 +95,7 @@ print(eigo)
 words = eigo.copy()
 
 print(words)
+
+english = eigo[:]
+
+print(english)
