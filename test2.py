@@ -1,28 +1,6 @@
-# 四則演算
-test_integer = 100
+hex = [x * 16 for x in range(1, 9)]
 
-print(test_integer + 10) # 加算
-print(test_integer - 10) # 減算
-print(test_integer * 10) # 乗算
-print(test_integer / 10) # 除算
+# for x in range(1, 9):
+#   hex.append(x * 16)
 
-# 数値へ変換
-test_str = '100'
-
-print(int(test_str) + 100)
-
-# 浮動小数点数
-
-test_str = '100.5'
-
-print(float(test_str) + 100)
-
-test_float = .5
-print(test_float)
-
-# 複素数
-test_complex = 100 + 5j
-
-print(test_complex)
-print(test_complex.real)
-print(test_complex.imag)
+print(hex)
