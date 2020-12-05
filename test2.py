@@ -5,8 +5,8 @@ hex = [x * 16 for x in range(1, 9)]
 
 print(hex)
 
-strheight = "170, 168, 180, 175, 165"
+strheight = "170,168,180,17x,165"
 
-height = [int(x) for x in strheight.split(',')]
+height = [int(x) for x in strheight.split(',') if x.isdigit()]
 
 print(height)
