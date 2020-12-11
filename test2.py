@@ -14,3 +14,7 @@ print(height)
 data = [[x+y*3 for x in range(3)] for y in range(4)]
 
 print(data)
+
+data0 = [[0 for x in range(3)] for y in range(4)]
+
+print(data0)
