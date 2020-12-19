@@ -13,3 +13,9 @@ def func(*arguments):
   for arg in arguments:
     print(arg)
 func(1, 2, 3, 4)
+
+def kansu1(a):
+  print(a)
+
+kansu1(88)
+kansu1(a=77)
