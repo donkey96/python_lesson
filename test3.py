@@ -19,3 +19,15 @@ def kansu1(a):
 
 kansu1(88)
 kansu1(a=77)
+
+def kansu2(a, b):
+  print(a + b)
+
+kansu2(40, 60)
+kansu2(40, b=60)
+kansu2(a=40, b=60)
+kansu2(b=40, a=60)
+kansu2(*(40, 61))
+kansu2(*[40, 62])
+kansu2(*"えび")
+kansu2(**{'a':40, 'b':63})
