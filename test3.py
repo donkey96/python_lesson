@@ -31,3 +31,10 @@ kansu2(*(40, 61))
 kansu2(*[40, 62])
 kansu2(*"えび")
 kansu2(**{'a':40, 'b':63})
+
+def kansu3(a, b=11):
+  print(a, b)
+
+kansu3(33, 22)
+kansu3(33, b=22)
+kansu3(33)
