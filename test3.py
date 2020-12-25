@@ -38,3 +38,10 @@ def kansu3(a, b=11):
 kansu3(33, 22)
 kansu3(33, b=22)
 kansu3(33)
+
+def kansu4(*args):
+  print(args)
+
+kansu4()
+kansu4(55)
+kansu4(22, 66)
