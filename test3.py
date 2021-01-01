@@ -45,3 +45,9 @@ def kansu4(*args):
 kansu4()
 kansu4(55)
 kansu4(22, 66)
+
+def kansu44(*args):
+  for arg in args:
+    print(arg)
+
+kansu44(1, 2, 3, 4)
