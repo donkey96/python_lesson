@@ -57,3 +57,9 @@ def kansu5(*args, a):
 
 kansu5(a=18)
 kansu5(11, 22, a=18)
+
+def kansu6(**keywords):
+  for kw in keywords:
+    print(kw, ":", keywords[kw])
+
+kansu6(a=1, b=2, c=3, d=4)
