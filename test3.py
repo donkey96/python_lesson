@@ -63,3 +63,8 @@ def kansu6(**keywords):
     print(kw, ":", keywords[kw])
 
 kansu6(a=1, b=2, c=3, d=4)
+
+def kansu7(*, a=77):
+  print(a)
+
+kansu7(a=99)
