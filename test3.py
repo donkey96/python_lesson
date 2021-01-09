@@ -68,3 +68,8 @@ def kansu7(*, a=77):
   print(a)
 
 kansu7(a=99)
+
+def kansu77(a, b, *, c=77, d=88):
+  print(a, b, c, d)
+
+kansu77(11, 22, c=33)
