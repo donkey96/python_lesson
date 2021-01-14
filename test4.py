@@ -1,19 +1,15 @@
-def func(hp, status="正常", action="移動", job="戦士"):
-    print("キャラクターの行動は", action, "です。")
-    print("現在の体力は", hp, "なので、", action, "できるか確認ください。")
-    print("職業は、", job)
-    print("状態は、", status)
+def intro(name, *arguments, **keywords):
+    print("あなたは", name, "さんを知っていますか？")
+    print(name, "さんは、メジャーで大活躍している選手です。")
+    for arg in arguments:
+        print(arg)
+    print("-" * 40)
+    for kw in keywords:
+        print(kw, ":", keywords[kw])
 
-func(1000)
-print("-" * 5)
-func("少し")
-print("-" * 5)
-func(hp=1000)
-print("-" * 5)
-func(hp=10000, action='回復')
-print("-" * 5)
-func(action="休憩", hp=999)
-print("-" * 5)
-func("満タン", "強化", "戦闘")
-print("-" * 5)
-func("半分", status="弱体")
+intro("大谷",
+    "彼はピッチャーもバッターもできます。",
+    "そして。どちらも成績がとても良いです！",
+    team="エンジェルス",
+    position="TWO-WAY(二刀流)",
+    years="24歳")
