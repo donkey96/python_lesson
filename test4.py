@@ -1,15 +1,16 @@
-def intro(name, *arguments, **keywords):
-    print("あなたは", name, "さんを知っていますか？")
-    print(name, "さんは、メジャーで大活躍している選手です。")
-    for arg in arguments:
-        print(arg)
-    print("-" * 40)
-    for kw in keywords:
-        print(kw, ":", keywords[kw])
+def ask(prompt, retries=4, reminder='Please try again!'):
+    while True:
+        ok = input(prompt)
+        if ok in ('y', 'yes', 'yeah'):
+            return True
+        if ok in ('n', 'no', 'none'):
+            return False
+        retries = retries - 1
+        if retries < 0:
+            raise valueError('invalid user response')
+        print(reminder)
 
-intro("大谷",
-    "彼はピッチャーもバッターもできます。",
-    "そして。どちらも成績がとても良いです！",
-    team="エンジェルス",
-    position="TWO-WAY(二刀流)",
-    years="24歳")
+if ask('Do you really want to quit?'):
+    print('Normal END')
+else:
+    print('Lets Do It Again!!')
